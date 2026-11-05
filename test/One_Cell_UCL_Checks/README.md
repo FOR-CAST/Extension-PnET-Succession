@@ -27,7 +27,7 @@ Every case writes Output Biomass Community (`community-input-file-<year>.csv`) a
 
 ## Results, 2026-11-04
 
-Tool-Docker-Apptainer's UCLv2 image at `ghcr.io/landis-ii-foundation/landis-ii-v8-uclv2-release@sha256:89fb537774dcaeb8ca97f9dbbc6e3189c384332e36fcbfdb302d07799c065cd5` (PnET-Succession 6.1.2, Library-PnET-Cohort 2.4.1, Universal Cohort Library 2.0.1), alone and with these pull requests built and mounted over the image's DLLs: Library-Universal-Cohort #7, Library-PnET-Cohort #17, Extension-PnET-Succession #37 and Extension-Output-Biomass-PnET #24 ("PRs"). "PRs + `ICohort.Data`" adds an explicit implementation of the Universal Cohort Library's `ICohort.Data` to PnET's `Cohort` (Library-PnET-Cohort #18).
+Tool-Docker-Apptainer's UCLv2 image at `ghcr.io/landis-ii-foundation/landis-ii-v8-uclv2-release@sha256:89fb537774dcaeb8ca97f9dbbc6e3189c384332e36fcbfdb302d07799c065cd5` (PnET-Succession 6.1.2, Library-PnET-Cohort 2.4.1, Universal Cohort Library 2.0.1), alone and with these pull requests built and mounted over the image's DLLs: [Library-Universal-Cohort #7](https://github.com/LANDIS-II-Foundation/Library-Universal-Cohort/pull/7), [Library-PnET-Cohort #17](https://github.com/LANDIS-II-Foundation/Library-PnET-Cohort/pull/17), [Extension-PnET-Succession #37](https://github.com/LANDIS-II-Foundation/Extension-PnET-Succession/pull/37) and [Extension-Output-Biomass-PnET #24](https://github.com/LANDIS-II-Foundation/Extension-Output-Biomass-PnET/pull/24) ("PRs"). "PRs + `ICohort.Data`" adds an explicit implementation of the Universal Cohort Library's `ICohort.Data` to PnET's `Cohort`, as suggested on [Library-PnET-Cohort #18](https://github.com/LANDIS-II-Foundation/Library-PnET-Cohort/issues/18).
 
 | Scenario | 2.4.1 | PRs | PRs + `ICohort.Data` |
 |---|---|---|---|
@@ -41,3 +41,5 @@ Tool-Docker-Apptainer's UCLv2 image at `ghcr.io/landis-ii-foundation/landis-ii-v
 | `scenario-par.txt` / `-new.txt` | map 851 (July 2009 in `Site.csv`: 851.9) | map 256 (December 2009: 256) | |
 
 Biomass values are Output Biomass Community's `CohortBiomass` for the one cohort.
+
+Issues: partial harvest and fire, [Library-PnET-Cohort #18](https://github.com/LANDIS-II-Foundation/Library-PnET-Cohort/issues/18); the merge cases, [#19](https://github.com/LANDIS-II-Foundation/Library-PnET-Cohort/issues/19) (and `CohortBinSize` in [#17](https://github.com/LANDIS-II-Foundation/Library-PnET-Cohort/pull/17)); dead pools, [#20](https://github.com/LANDIS-II-Foundation/Library-PnET-Cohort/issues/20); sub-canopy PAR, [Extension-Output-Biomass-PnET #24](https://github.com/LANDIS-II-Foundation/Extension-Output-Biomass-PnET/pull/24).
