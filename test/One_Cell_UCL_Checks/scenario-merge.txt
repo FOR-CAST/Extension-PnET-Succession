@@ -1,0 +1,19 @@
+LandisData  Scenario
+
+>> Two querrubr cohorts, ages 5 and 8, no CohortBinSize (default: Timestep, 10), so the younger is merged into the older at initialization.
+
+Duration  10
+
+Species  species.txt
+
+Ecoregions     ecoregions.txt
+EcoregionsMap  ecoregions.asc
+
+CellLength  30
+
+>> Two querrubr cohorts, ages 5 and 8, no CohortBinSize (default: Timestep, 10), so the younger is merged into the older at initialization.
+   "PnET-Succession"   pnetsuccession-young.txt
+
+   "Output Biomass Community"  output-community.txt
+
+RandomNumberSeed  1111

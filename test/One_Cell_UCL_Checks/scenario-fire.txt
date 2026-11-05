@@ -1,0 +1,21 @@
+LandisData  Scenario
+
+>> One querrubr cohort, age 70 (70 % of longevity), fire tolerance 2; one low-severity fire burns the cell at year 10.
+
+Duration  10
+
+Species  species.txt
+
+Ecoregions     ecoregions.txt
+EcoregionsMap  ecoregions.asc
+
+CellLength  30
+
+>> Succession Extension  Initialization File
+   "PnET-Succession"   pnetsuccession.txt
+
+   "Dynamic Fuel System"  dynamic-fuels.txt
+   "Dynamic Fire System"  dynamic-fire.txt
+   "Output Biomass Community"  output-community.txt
+
+RandomNumberSeed  1111

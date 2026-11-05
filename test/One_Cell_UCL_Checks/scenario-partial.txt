@@ -1,0 +1,20 @@
+LandisData  Scenario
+
+>> One querrubr cohort, age 70; Biomass Harvest takes 50 % of it at year 10.
+
+Duration  10
+
+Species  species.txt
+
+Ecoregions     ecoregions.txt
+EcoregionsMap  ecoregions.asc
+
+CellLength  30
+
+>> Succession Extension  Initialization File
+   "PnET-Succession"   pnetsuccession.txt
+
+   "Biomass Harvest"  harvest-partial.txt
+   "Output Biomass Community"  output-community.txt
+
+RandomNumberSeed  1111

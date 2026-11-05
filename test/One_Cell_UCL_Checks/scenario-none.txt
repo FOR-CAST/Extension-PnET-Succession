@@ -1,0 +1,20 @@
+LandisData  Scenario
+
+>> As scenario-partial.txt, but the prescription's age range (1-5) holds no cohort, so nothing is removed.
+
+Duration  10
+
+Species  species.txt
+
+Ecoregions     ecoregions.txt
+EcoregionsMap  ecoregions.asc
+
+CellLength  30
+
+>> Succession Extension  Initialization File
+   "PnET-Succession"   pnetsuccession.txt
+
+   "Biomass Harvest"  harvest-none.txt
+   "Output Biomass Community"  output-community.txt
+
+RandomNumberSeed  1111

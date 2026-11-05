@@ -1,0 +1,5 @@
+LandisData  Species
+
+>> Longevity 100 years, so the age-70 cohort is at 70 % of its longevity.
+>> Name      Longevity  Maturity  EffectiveSeedDist  MaxSeedDist  VegReprodProb  SproutMin  SproutMax  PostFireRegen
+   querrubr  100        25        30                 3000         0.5            20         100        resprout

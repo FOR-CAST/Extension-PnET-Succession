@@ -1,0 +1,26 @@
+LandisData  "Dynamic Fuel System"
+
+Timestep  10
+
+>> Species  FuelCoefficient
+querrubr  1
+
+HardwoodMaximum  25
+
+DeadFirMaxAge  20
+
+FuelTypes
+>> FuelType  BaseFuel   AgeRange   Species
+   8         Deciduous  0 to 100   querrubr
+
+EcoregionTable
+>> FuelType  Ecoregion
+
+DisturbanceConversionTable
+>> FuelType  Duration  Prescription
+
+MapFileNames  fire/FuelType-{timestep}.tif
+
+PctConiferFileName  fire/PctConifer-{timestep}.tif
+
+PctDeadFirFileName  fire/PctDeadFir-{timestep}.tif

@@ -1,0 +1,19 @@
+LandisData  Scenario
+
+>> One querrubr cohort; Output-PnET writes the sub-canopy PAR map (keyword as in the Output-PnET v1.0 guide).
+
+Duration  10
+
+Species  species.txt
+
+Ecoregions     ecoregions.txt
+EcoregionsMap  ecoregions.asc
+
+CellLength  30
+
+>> Succession Extension  Initialization File
+   "PnET-Succession"   pnetsuccession.txt
+
+   "Output-PnET"  output-pnet-SubCanopyPAR.txt
+
+RandomNumberSeed  1111

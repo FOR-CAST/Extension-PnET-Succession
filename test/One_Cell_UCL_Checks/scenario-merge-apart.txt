@@ -1,0 +1,19 @@
+LandisData  Scenario
+
+>> Two querrubr cohorts, ages 5 and 15, no CohortBinSize (default: Timestep, 10): 10 years apart, so they are not merged.
+
+Duration  10
+
+Species  species.txt
+
+Ecoregions     ecoregions.txt
+EcoregionsMap  ecoregions.asc
+
+CellLength  30
+
+>> Two querrubr cohorts, ages 5 and 15, no CohortBinSize (default: Timestep, 10): 10 years apart, so they are not merged.
+   "PnET-Succession"   pnetsuccession-apart.txt
+
+   "Output Biomass Community"  output-community.txt
+
+RandomNumberSeed  1111

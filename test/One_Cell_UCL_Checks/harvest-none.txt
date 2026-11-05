@@ -1,0 +1,23 @@
+LandisData  "Biomass Harvest"
+
+>> At year 10, remove 50 % of querrubr cohorts aged 1-5: there are none, so this removes nothing.
+
+Timestep  10
+
+ManagementAreas  mgmt-areas.asc
+Stands           stands.asc
+
+Prescription  None
+    StandRanking   MaxCohortAge
+    SiteSelection  Complete
+    CohortsRemoved SpeciesList
+    querrubr  1-5 (50%)
+
+HarvestImplementations
+>>  MgmtArea  Prescription  HarvestArea  BeginTime  EndTime
+    1         None  100%         10         10
+
+PrescriptionMaps  harvest/prescripts-{timestep}.tif
+BiomassMaps       harvest/biomass-removed-{timestep}.tif
+EventLog          harvest/event-log.csv
+SummaryLog        harvest/summary-log.csv
